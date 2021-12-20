@@ -1,0 +1,78 @@
+:root {
+  --content-width: 50ch;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2rem;
+  max-width: calc(var(--content-width) - 4rem);
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 100ch;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15ch, 1fr));
+  justify-content: center;
+  gap: 2rem;
+  grid-auto-flow: dense;
+}
+
+.card {
+  display: flex;
+  border: 0.5rem solid black;
+  container-type: inline-size;
+}
+
+@container (min-width: 60ch) {
+  .card-inner {
+    display: flex;
+  }
+
+  .card-inner > * {
+    max-width: 50%;
+  }
+
+  .card img {
+    object-fit: cover;
+  }
+}
+
+.card figcaption {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem 2rem;
+}
+
+.card h2 {
+  margin-block-end: 0;
+}
+
+.card button {
+  align-self: flex-end;
+  padding: 0.75rem 1rem;
+  border: 0.25rem solid black;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.featured {
+  grid-column: span 2;
+}

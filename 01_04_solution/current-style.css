@@ -1,0 +1,16 @@
+.wrapper {
+  margin: 0 auto;
+  padding: 1rem;
+  width: clamp(calc(320px - 3rem), 75%, 70ch);
+  border: 0.5rem solid black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.block {
+  box-sizing: border-box;
+  flex: 1 0 20ch; /* Sets the breakpoint */
+  padding: 0 1rem;
+  border: 0.5rem solid green;
+}

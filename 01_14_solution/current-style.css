@@ -1,0 +1,82 @@
+:root {
+  --content-width: 50ch;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  max-width: calc(var(--content-width) - 4rem);
+}
+
+.challenge-title {
+  margin: 2rem;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.main > * {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
+}
+
+.card-inner {
+  width: clamp(20ch, 50vw, 40ch);
+  border: 0.5rem solid black;
+  display: grid;
+}
+
+.number {
+  font-family: monospace;
+  font-size: clamp(2rem, 5vw, 8rem);
+  color: white;
+  text-shadow: 0.03em 0.03em 0 hsl(208.1, 61.3%, 35.5%);
+}
+
+.number,
+.card img {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.card figcaption {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem 2rem;
+}
+
+.card h2 {
+  margin-block-end: 0;
+}
+
+.card button {
+  align-self: flex-end;
+  padding: 0.75rem 1rem;
+  border: 0.25rem solid black;
+  font-size: 1rem;
+  text-transform: uppercase;
+}

@@ -1,0 +1,43 @@
+:root {
+  --content-width: 50ch;
+}
+
+body {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2rem;
+  max-width: calc(var(--content-width) - 4rem);
+}
+
+.main {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2rem;
+  max-width: calc(var(--content-width) - 4rem);
+}
+
+main > * {
+  padding: 2rem;
+}
+
+.highlight {
+  background-color: rgb(71, 167, 251);
+}
+
+.full-width {
+ 
+}
+

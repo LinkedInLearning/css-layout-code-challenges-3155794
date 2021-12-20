@@ -1,0 +1,54 @@
+:root {
+  --content-width: 50ch;
+}
+
+body {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2rem;
+  max-width: calc(var(--content-width) - 4rem);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr minmax( auto, var(--content-width)) 1fr ;
+}
+
+main > * {
+  padding: 2rem;
+  grid-column: 2;
+}
+
+.highlight {
+  background-color: rgb(71, 167, 251);
+}
+
+.full-width {
+  padding: 2rem 0;
+ grid-column: 1/-1;
+ display: grid;
+ grid-template-columns: inherit;
+}
+
+.full-width > * {
+  grid-column: 2;
+  padding: 0 2rem;
+}
+
+figure.full-width > * {
+  padding: 0;
+  grid-column: 1/-1;
+}
