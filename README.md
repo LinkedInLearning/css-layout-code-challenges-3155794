@@ -1,8 +1,9 @@
 # CSS Layout Code Challenges
+This is the repository for the LinkedIn Learning course CSS Layout Code Challenges. The full course is available from [LinkedIn Learning][lil-course-url].
 
-This is the repository for the LinkedIn Learning course `CSS Layout Code Challenges`. The full course is available from [LinkedIn Learning][lil-course-url].
+![CSS Layout Code Challenges][lil-thumbnail-url] 
 
-_See the readme file in the main branch for updated instructions and information._
+This course with Morten Rand-Hendriksen tests your knowledge with 15 CSS layout challenges exploring the opportunities and intricacies presented by modern CSS layout modules. Challenges range in scope from component-level layouts like horizontal menus to sitewide layouts and responsive layouts across multiple viewport widths. If you want to see how your skills stack up or just learn something new, join Morten for this course.
 
 ## Instructions
 
@@ -20,6 +21,15 @@ The repository contains two folders named `css` and `assets`. These contain glob
 2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
 3. Open the exercise files for the current challenge you are watching.
 
-[0]: # "Replace these placeholder URLs with actual course URLs"
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+### Instructor
+
+Morten Rand-Hendriksen 
+                            
+Developer and Senior Staff Instructor
+
+                            
+
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/morten-rand-hendriksen).
+
+[lil-course-url]: https://www.linkedin.com/learning/css-layout-code-challenges
+[lil-thumbnail-url]: https://cdn.lynda.com/course/3155794/3155794-1644861689695-16x9.jpg
