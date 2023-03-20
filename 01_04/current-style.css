@@ -4,12 +4,13 @@
   width: clamp(calc(320px - 3rem), 75%, 70ch);
   border: 0.5rem solid black;
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
+  flex-wrap: wrap;
+  
 }
 
 .block {
-  
   padding: 0 1rem;
   border: 0.5rem solid green;
+  flex: 1 0 10ch;
 }
