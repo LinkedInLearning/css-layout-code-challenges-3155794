@@ -31,20 +31,18 @@ img {
 .card {
   width: clamp(20ch, 50%, var(--content-width));
   margin: 2rem;
-  border: .5rem solid black;
-}
-.card-inner{
+  border: 0.5rem solid black;
   container-type: inline-size;
 }
-@container (min-width: 20vw) {
+
+@container (min-width: 30ch) {
   .card-inner {
     display: flex;
   }
 
-  .card-inner > * {
+  .card-inner > * { 
     max-width: 50%;
   }
-
   .card img {
     object-fit: cover;
   }
