@@ -38,9 +38,9 @@ main > * {
 
 .full-width {
   padding: 2rem 0;
- grid-column: 1/-1;
- display: grid;
- grid-template-columns: inherit;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: inherit;
 }
 
 .full-width > * {
