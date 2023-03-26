@@ -4,11 +4,10 @@
 
 body {
   margin: 0;
-  box-sizing: border-box;
 }
 
 figure {
-  margin: 0;
+  
 }
 
 img {
@@ -19,6 +18,7 @@ img {
 
 .header {
   display: flex;
+ 
   max-width: calc(var(--content-width) - 4rem);
 }
 
@@ -27,13 +27,24 @@ img {
 }
 
 .main {
-  
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
-
+.main>*{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
+}
 .card-inner {
   width: clamp(20ch, 50vw, 40ch);
   border: 0.5rem solid black;
   display: grid;
+  gap: 2rem;
 }
 
 .number {
