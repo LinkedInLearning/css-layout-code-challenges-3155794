@@ -3,10 +3,13 @@
   width: clamp(calc(320px - 3rem), 75%, 70ch);
   height: calc(75vh - 2.5rem);
   border: 0.5rem solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .child {
   padding: 0 2rem;
   width: 50%;
   border: 0.5rem solid red;
-}
+  }

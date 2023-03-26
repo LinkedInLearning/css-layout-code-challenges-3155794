@@ -12,13 +12,21 @@ img {
 }
 
 .wrapper {
-
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  
 }
 
 .image img {
-
+  height: 100vh;
+  object-fit: cover;
 }
 
 .cover {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }

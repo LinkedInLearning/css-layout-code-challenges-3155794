@@ -35,7 +35,7 @@ img {
   container-type: inline-size;
 }
 
-@container (min-width: 60ch) {
+@container (min-width: 30ch) {
   .card-inner {
     display: flex;
   }

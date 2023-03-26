@@ -8,12 +8,19 @@
 .menu {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
 }
 
 .menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-right: 1rem;
 }
 
 .menu a {
@@ -22,6 +29,7 @@
   text-decoration: none;
   color: black;
   border: 1px solid black;
+  
 }
 
 .menu a:hover {

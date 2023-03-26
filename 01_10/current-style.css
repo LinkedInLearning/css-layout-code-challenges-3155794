@@ -25,13 +25,16 @@ img {
 
 .main {
   display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
   justify-content: center;
 }
 
 .card {
-  width: clamp(20ch, 50%, var(--content-width));
-  margin: 2rem;
- border: .5rem solid black;
+  flex: 1 0 20ch;
+  width: clamp(10ch, 30%, var(--content-width));
+  max-width: 20ch;
+  border: .5rem solid black;
 }
 
 .card figcaption {
@@ -41,7 +44,7 @@ img {
 }
 
 .card h2 {
-margin-block-end: 0;
+  margin-block-end: 0;
 }
 
 .card button {
